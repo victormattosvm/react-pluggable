@@ -54,6 +54,7 @@
     "react-ecosystem"
   ],
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
     "semver": "^7.3.2"
   }
 }
