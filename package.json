@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint --fix",
     "prepare": "tsdx build && husky install"
   },
   "peerDependencies": {
@@ -33,7 +33,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/semver": "^7.3.13",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tsdx": "^0.14.1",

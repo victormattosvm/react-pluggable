@@ -3230,7 +3230,7 @@
   "resolved" "https://registry.npmjs.org/humanize-duration/-/humanize-duration-3.23.1.tgz"
   "version" "3.23.1"
 
-"husky@^8.0.0":
+"husky@^8.0.3":
   "integrity" "sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg=="
   "resolved" "https://registry.npmjs.org/husky/-/husky-8.0.3.tgz"
   "version" "8.0.3"
