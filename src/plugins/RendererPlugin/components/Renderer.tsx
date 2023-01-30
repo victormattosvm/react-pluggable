@@ -33,7 +33,7 @@ export const Renderer: React.SFC<{
   return (
     <>
       {components.map(
-        (compObject: { component: React.ComponentClass; key: string }) => (
+        (compObject: { component: React.FC; key: string }) => (
           <compObject.component key={compObject.key} />
         )
       )}
