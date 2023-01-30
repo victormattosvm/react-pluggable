@@ -5,8 +5,7 @@ import ComponentUpdatedEvent from '../events/ComponentUpdatedEvent';
 
 export const Renderer: React.FC<{
   placement: string;
-}> = ({ placement, ...args } ) => {
-
+}> = ({ placement, ...args }) => {
   const pluginStore = usePluginStore();
   const forceUpdate = useForceUpdate();
 
@@ -33,11 +32,9 @@ export const Renderer: React.FC<{
 
   return (
     <>
-      {components.map(
-        (compObject: { component: React.FC; key: string }) => (
-          <compObject.component key={compObject.key} {...args} />
-        )
-      )}
+      {components.map((compObject: { component: React.FC; key: string }) => (
+        <compObject.component key={compObject.key} {...args} />
+      ))}
     </>
   );
 };
