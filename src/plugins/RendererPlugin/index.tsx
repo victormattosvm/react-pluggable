@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { IPlugin } from '../../interfaces/IPlugin';
 import { PluginStore } from '../../PluginStore';
 import { Renderer } from './components/Renderer';

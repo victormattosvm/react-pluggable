@@ -3,9 +3,10 @@ import useForceUpdate from '../../../hooks/useForceUpdate';
 import { usePluginStore } from '../../../hooks/usePluginStore';
 import ComponentUpdatedEvent from '../events/ComponentUpdatedEvent';
 
-export const Renderer: React.SFC<{
+export const Renderer: React.FC<{
   placement: string;
-}> = ({ placement }) => {
+}> = ({ placement, ...args } ) => {
+
   const pluginStore = usePluginStore();
   const forceUpdate = useForceUpdate();
 
@@ -33,8 +34,8 @@ export const Renderer: React.SFC<{
   return (
     <>
       {components.map(
-        (compObject: { component: React.ComponentClass; key: string }) => (
-          <compObject.component key={compObject.key} />
+        (compObject: { component: React.FC; key: string }) => (
+          <compObject.component key={compObject.key} {...args} />
         )
       )}
     </>
