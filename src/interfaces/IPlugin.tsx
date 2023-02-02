@@ -6,5 +6,4 @@ export interface IPlugin {
   getDependencies(): string[];
   init(pluginStore: PluginStore): void;
   activate(): void;
-  deactivate(): void;
 }

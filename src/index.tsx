@@ -1,4 +1,4 @@
-export { IPlugin } from './interfaces/IPlugin';
+export type { IPlugin } from './interfaces/IPlugin';
 export { createPluginStore } from './hooks/createPluginStore';
 export { PluginProvider } from './PluginProvider';
 export { PluginStore } from './PluginStore';
